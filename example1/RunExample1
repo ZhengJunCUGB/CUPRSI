@@ -1,4 +1,0 @@
-si <PassiveSourceData.bin ns=30001 ntr=201 dt=4000 ns_win=10000 \
-outns=1001 StartFldr=1 EndFldr=201 Device=0 threads=256 blocks=128 file_mode=0 RAMSizeMB=20000 VRAMSizeMB=2000 Stack_flag=1 >VirtualShot.su
-
-
