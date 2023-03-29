@@ -30,13 +30,13 @@ build: si
 	cp si ../bin
 
 si.o:si.cu
-	$(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
+	$(NVCC) $(INCLUDES) $(ALL_FLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 siCUFFT.o:siCUFFT.cu
-	$(NVCC) $(INCLUDES) $(ALL_CCFLAGS) $(GENCODE_FLAGS) -o $@ -c $<
+	$(NVCC) $(INCLUDES) $(ALL_FLAGS) $(GENCODE_FLAGS) -o $@ -c $<
 
 si: si.o siCUFFT.o
-	$(NVCC) $(ALL_LDFLAGS) $(GENCODE_FLAGS) -o $@ $+ $(LIBRARIES)
+	$(NVCC) $(ALL_FLAGS) $(GENCODE_FLAGS) -o $@ $+ $(LIBRARIES)
 
 run: build
 	./si
