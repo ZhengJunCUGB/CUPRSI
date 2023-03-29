@@ -11,7 +11,7 @@ void siCUFFT(sipar par, FILE* in)
 	unsigned int num_fldr = par.EndFldr - par.StartFldr + 1; // The number of fldr
 
 	/* Calculate the number of time windows which stay in RAM and allocate memory */
-	/* The signal in the disk is read into RAM in blocks and the block size is equal to variable num_time_windows_on_RAM multiply Variable ns_win */
+	/* The signal in the disk is read into RAM in blocks and the block size is equal to num_time_windows_on_RAM multiply ns_win */
 	unsigned int num_time_windows_on_RAM; // The number of time windows which stay in RAM
 	float** h_signal_all = (float**) malloc (sizeof(float*) * par.ntr); // RAM space of input signals
 	float* h_out_all; // RAM space of cross correlated signals
