@@ -4,4 +4,4 @@ The algorithm needs libraries :
 1.CUDA 
 2.Center for Wave Phenomena(CWP) http://www.cwp.mines.edu/cwpcodes
 3.CUDASDK
-Examples are available at the link :
+Examples are available at the link :https://github.com/ZhengJunCUGB/CUPRSI-Example
